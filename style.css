@@ -88,7 +88,7 @@ body {
     color: var(--soft);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 175px) {
     body {
         background-image: url('./images/bg-mobile.svg');
     }
