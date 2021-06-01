@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft: hsl(300, 69%, 71%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('./images/bg-desktop.svg');
+    background-color: var(--violet);
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    width: 1220px;
+    margin: auto;
+    max-width: 90%;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.content {
+    display: flex;
+}
+
+.content .content-left img {
+    background-size: cover;
+    height: 85%;
+}
+
+.content-right {
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+
+.content .content-right h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.content .content-right p {
+    margin: 20px 0 40px 0;
+    text-align: justify;
+}
+
+.content-right a {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 15px 50px;
+    border-radius: 50px;
+    box-shadow: inset 2px -7px 11px rgba(80, 92, 51, 0.17);
+    font-weight: 600;
+    transition: .3s all ease;
+}
+
+.content-right a:hover {
+    background: var(--soft);
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -4rem;
+    font-size: 20px;
+}
+
+.social-links ion-icon {
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.social-links ion-icon:hover {
+    border-color: var(--soft);
+    color: var(--soft);
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url('./images/bg-mobile.svg');
+    }
+    .container {
+        width: 375px;
+        margin: auto;
+    }
+    .logo img {
+        width: 40%;
+    }
+    .content {
+        display: block;
+    }
+    .content-left img {
+        width: 100%;
+    }
+    .content-right h1 {
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+    }
+    .content-right p {
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+    }
+    .content-right a{
+        display: flex;
+        justify-content: center;
+    }
+    .social-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+}
